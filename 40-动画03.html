@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*定义一个动画  动画的名称是myanimate02，定义了之后不会马上看到效果，必须要在对应的元素样式里面调用*/
+			@keyframes myanimate03 { 
+				0% {background: red; left:0px; top:0px;} 
+				25% {background: yellow; left:200px; top:0px;} 
+				50% {background: blue; left:200px; top:200px;} 
+				55% {background:saddlebrown; left:200px; top:300px;} 
+				75% {background: green; left:0px; top:200px;} 
+				100% {background: red; left:0px; top:0px;} 
+			} 
+
+		
+			*{
+				margin: 0;
+				padding: 0;
+			}
+		
+			.box1{
+				position:absolute;
+				left: 0;
+				top: 0;
+				width: 100px;
+				height: 100px;
+				border: solid 1px #ff6600;
+				background-color: salmon;
+				animation:myanimate03;
+				animation-duration:4s;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			
+		</div>
+		
+		
+	</body>
+</html>

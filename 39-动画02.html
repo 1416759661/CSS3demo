@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*定义一个动画  动画的名称是myanimate02，定义了之后不会马上看到效果，必须要在对应的元素样式里面调用*/
+			@keyframes myanimate02 { 
+				from {
+					left:0;top:0;
+				} 
+				to {
+					left:300px;
+					top: 100px;
+					transform: rotate(540deg) scale(2) skew(30deg);
+					opacity: 0.5;
+					background-color: seagreen;					
+				} 
+			} 
+
+
+		
+			*{
+				margin: 0;
+				padding: 0;
+			}
+		
+			.box1{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100px;
+				height: 100px;
+				border: solid 1px #ff6600;
+				background-color: salmon;
+				animation-name: myanimate02;
+				animation-duration:2s;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			
+		</div>
+		
+		
+	</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 300px;
+				height:100px;
+				border: solid 1px #ff6600;
+			}
+			
+			.box1{
+				background: -webkit-radial-gradient(red, green, blue); /* Safari 5.1 - 6.0 */ 
+				background: -o-radial-gradient(red, green, blue); /* Opera 11.6 - 12.0 */ 
+				background: -moz-radial-gradient(red, green, blue); /* Firefox 3.6 - 15 */ 
+				background: radial-gradient(red, green, blue); /* 标准的语法 */ 
+
+			}
+			
+			.box2{
+				background: -webkit-radial-gradient(red 5px, green 15%, blue 60%); /* Safari 5.1 - 6.0 */ 
+				background: -o-radial-gradient(red 5px, green 15%, blue 60%); /* Opera 11.6 - 12.0 */ 
+				background: -moz-radial-gradient(red 5px, green 15%, blue 60%); /* Firefox 3.6 - 15 */ 
+				background: radial-gradient(red 5px, green 15%, blue 60%); /* 标准的语法 */ 
+
+			}
+			
+			.box3{
+				background: -webkit-radial-gradient(circle, red, yellow, green); /* Safari 5.1 - 6.0 */ 
+				background: -o-radial-gradient(circle, red, yellow, green); /* Opera 11.6 - 12.0 */ 
+				background: -moz-radial-gradient(circle, red, yellow, green); /* Firefox 3.6 - 15 */ 
+				background: radial-gradient(circle, red, yellow, green); /* 标准的语法 */ 
+
+			}
+			
+			.box4{
+				background: -webkit-radial-gradient(ellipse, red, yellow, green); /* Safari 5.1 - 6.0 */ 
+				background: -o-radial-gradient(ellipse, red, yellow, green); /* Opera 11.6 - 12.0 */ 
+				background: -moz-radial-gradient(ellipse, red, yellow, green); /* Firefox 3.6 - 15 */ 
+				background: radial-gradient(ellipse, red, yellow, green); /* 标准的语法 */ 
+
+			}
+			
+			.box5{
+				background: -webkit-radial-gradient(60% 55%, closest-side,blue,green,yellow,black); /* Safari 5.1 - 6.0 */
+			    background: -o-radial-gradient(60% 55%, closest-side,blue,green,yellow,black); /* Opera 11.6 - 12.0 */
+			    background: -moz-radial-gradient(60% 55%, closest-side,blue,green,yellow,black); /* Firefox 3.6 - 15 */
+			    background: radial-gradient(60% 55%, closest-side,blue,green,yellow,black); /* 标准的语法（必须放在最后） */
+
+			}
+			
+			.box6{
+				background: -webkit-radial-gradient(60% 55%,farthest-side,blue,green,yellow,black); /* Safari 5.1 - 6.0 */
+			    background: -o-radial-gradient(60% 55%, farthest-side,blue,green,yellow,black); /* Opera 11.6 - 12.0 */
+			    background: -moz-radial-gradient(60% 55%, farthest-side,blue,green,yellow,black); /* Firefox 3.6 - 15 */
+			    background: radial-gradient(60% 55%, farthest-side,blue,green,yellow,black); /* 标准的语法（必须放在最后） */
+			}
+			
+			.box7{
+				background: -webkit-radial-gradient(60% 55%,closest-corner,blue,green,yellow,black); /* Safari 5.1 - 6.0 */
+			    background: -o-radial-gradient(60% 55%, closest-corner,blue,green,yellow,black); /* Opera 11.6 - 12.0 */
+			    background: -moz-radial-gradient(60% 55%, closest-corner,blue,green,yellow,black); /* Firefox 3.6 - 15 */
+			    background: radial-gradient(60% 55%, closest-corner,blue,green,yellow,black); /* 标准的语法（必须放在最后） */
+			}
+			
+			.box8{
+				background: -webkit-radial-gradient(60% 55%,farthest-corner,blue 5%,green,yellow,black); /* Safari 5.1 - 6.0 */
+			    background: -o-radial-gradient(60% 55%, farthest-corner,blue 5%,green,yellow,black); /* Opera 11.6 - 12.0 */
+			    background: -moz-radial-gradient(60% 55%, farthest-corner,blue 5%,green,yellow,black); /* Firefox 3.6 - 15 */
+			    background: radial-gradient(60% 55%, farthest-corner,blue 5%,green,yellow,black); /* 标准的语法（必须放在最后） */
+			}
+			
+			.box9{
+				 /* Safari 5.1 - 6.0 */
+				 background: -webkit-repeating-radial-gradient(circle,red, yellow 10%, green 15%);
+				 /* Opera 11.6 - 12.0 */ 
+				background: -o-repeating-radial-gradient(circle,red, yellow 10%, green 15%); 
+				/* Firefox 3.6 - 15 */ 
+				background: -moz-repeating-radial-gradient(circle,red, yellow 10%, green 15%); 
+				/* 标准的语法 */ 
+				background: repeating-radial-gradient(circle,red, yellow 5%, green 10%);
+
+			}
+			
+			.box10{
+				background: -webkit-radial-gradient(circle,rgba(255,0,0,0.5),rgba(255,0,0,1) 50%); /* Safari 5.1 - 6 */ 
+				background: -o-radial-gradient(circle,rgba(255,0,0,0.5),rgba(255,0,0,1) 50%); /* Opera 11.1 - 12*/ 
+				background: -moz-radial-gradient(circle,rgba(255,0,0,0.5),rgba(255,0,0,1) 50%); /* Firefox 3.6 - 15*/ 
+				background: radial-gradient(circle,rgba(255,0,0,0.5), rgba(255,0,0,1) 50%); /* 标准的语法 */
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			
+		</div>
+		<hr/>
+		<div class="box2">
+			
+		</div>
+		<hr/>
+		<div class="box3">
+			
+		</div>
+		<hr/>
+		<div class="box4">
+			
+		</div>
+		<hr/>
+		<div class="box5">
+			
+		</div>
+		<hr/>
+		<div class="box6">
+			
+		</div>
+		<hr/>
+		<div class="box7">
+			
+		</div>
+		<hr/>
+		<div class="box8">
+			
+		</div>
+		<hr/>
+		<div class="box9">
+			
+		</div>
+		<hr/>
+		<div class="box10">
+			
+		</div>
+	</body>
+</html>

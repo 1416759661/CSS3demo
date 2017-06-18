@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+			
+		.mofang{
+			width: 200px;
+			height: 200px;
+			position: relative;
+			margin: 200px;
+			transform-style:preserve-3d;
+			transform:perspective(380px);
+			transition: all 2s;
+		}
+		
+		.mofang:hover
+		{
+			transform:rotate3d(1,1,1,150deg);
+		}
+		
+		.mofang div.face{
+			width: 200px;
+			height: 200px;
+			background-color: salmon;
+			font-size:16px;
+			font-family: "微软雅黑";
+			font-weight: bolder;
+			position: absolute;
+			left: 0;
+			top: 0;
+			text-align: center;
+			line-height: 200px;
+			opacity: 0.8;
+			color: white;
+			background-image: url(img/bgfix.jpg);
+			background-repeat: no-repeat;
+		}
+		
+		.mofang div.face:nth-child(1)
+		{
+			transform: translateX(-100px) rotateY(90deg);
+			background-color: seagreen;
+			background-image: url(img/bgfix.jpg);
+			background-repeat: no-repeat;
+		}
+		
+		.mofang div.face:nth-child(2)
+		{
+			transform: translateX(100px) rotateY(90deg);
+			background-color: darkblue;
+			background-image: url(img/bgfix.jpg);
+			background-repeat: no-repeat;
+		}
+		
+		.mofang div.face:nth-child(3)
+		{
+			transform: translateY(-100px) rotateX(90deg);
+			background-color: darkolivegreen;
+			background-image: url(img/bgfix.jpg);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+		
+		.mofang div.face:nth-child(4)
+		{
+			transform: translateY(100px) rotateX(90deg);
+			background-color: darkgreen;
+			background-image: url(img/bgfix.jpg);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+		
+		.mofang div.face:nth-child(5)
+		{
+			transform: translateZ(-100px);
+			background-color: darkorange;
+			background-image: url(img/bgfix.jpg);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+		
+		.mofang div.face:nth-child(6)
+		{
+			transform: translateZ(100px);
+			z-index: 6;
+			background-color: darkcyan;
+			background-image: url(img/bgfix.jpg);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+		
+		</style>
+	</head>
+	<body>
+		
+		<div class="mofang">
+			<div class="face">
+				1
+			</div>
+			<div class="face">
+				2
+			</div>
+			<div class="face">
+				3
+			</div>
+			<div class="face">
+				4
+			</div>
+			<div class="face">
+				5
+			</div>
+			<div class="face">
+				6
+			</div>
+		</div>
+		
+	</body>
+</html>

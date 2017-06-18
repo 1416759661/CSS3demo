@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+		
+			ul{
+				width: 600px;
+				height: 60px;
+				font-size: 18px;
+				font-family: "微软雅黑";
+				background-color:#eee;
+				list-style: none;
+				margin: 50px 0 0 50px;
+			}
+			
+			ul li{
+				width:149px;
+				height:60px;
+				float: left;	
+				border-left: solid 1px #FF6600;	
+				cursor: pointer;		
+			}
+			ul li:last-child
+			{
+				width:148px;
+				border-right: solid 1px #ff6600;
+			}
+			
+			ul li a{
+				height: 60px;
+				display: block;
+				text-decoration: none;
+				color:#ff6600;
+				line-height: 60px;
+				text-align: center;				
+				transform-origin:0px 0px 0px;
+				transform-style: preserve-3d;
+				transition: all 0.3s;				
+			}
+			ul li a:before
+			{
+				content:attr(data-title);
+				position: absolute;
+				left: 0;
+				top:100%;
+				width:100%;
+				text-align: center;
+				color: white;
+				background-color:#ff005b;
+				transform:rotateX(-90deg);
+				transform-origin: 50% 0px 0px;
+				transition: all 0.3s;
+			}
+			
+			ul li:hover a
+			{
+				transform: rotateX(90deg);
+			}
+			
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li><a href="###" data-title ="Video">视频教程</a></li>
+			<li><a href="###" data-title ="DownLoad">下载中心</a></li>
+			<li><a href="###" data-title ="Demo">效果展示</a></li>
+			<li><a href="###" data-title ="Contact">联系我们</a></li>
+		</ul>
+	</body>
+</html>

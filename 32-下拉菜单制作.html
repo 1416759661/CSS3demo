@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+		
+			.menu{
+				width: 600px;
+				height:30px;
+				background-color: seagreen;
+				margin-top: 50px;
+				margin-left: 50px;
+			}
+			.menu div{
+				width:149px;
+				height:30px;
+				float: left;
+				border-left: solid 1px #fff;
+				position: relative;
+			}
+			
+			.menu div>a{
+				display: block;
+				text-decoration: none;
+				color: white;
+				text-align: center;
+				line-height: 30px;
+			}
+			
+			.menu div ul{
+				position: absolute;
+				top:30px;
+				left:0;
+				list-style: none;
+			}
+			
+			.menu div ul li{
+				height: 30px;
+				width: 150px;
+				border-bottom: solid 1px #eee;
+				background-color: seashell;
+			}
+			
+			.menu div ul li:last-child{
+				border-bottom: 0;
+			}
+			
+			.menu div ul li a{
+				text-decoration: none;
+				font-size: 12px;
+				color: brown;
+				text-align: center;
+				display: block;
+				line-height: 30px;
+			}
+			
+			.menu div ul.submenu{
+				height: 0;
+				overflow: hidden;
+				transition:height 1s;
+			}
+			
+			.menu div:hover ul.submenu{
+				height:160px;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="menu">
+			<div><a href="">视频教程</a>
+				 <ul class="submenu">
+				 	<li><a href="###">权限管理</a></li>
+				 	<li><a href="###">MVC视频</a></li>
+				 	<li><a href="###">NodeJs</a></li>
+				 	<li><a href="###">聊天室制作</a></li>
+				 	<li><a href="###">在线考试系统</a></li>
+				 </ul>
+			</div>
+			<div><a href="">资料下载</a>
+				<ul class="submenu">
+				 	<li><a href="###">权限管理</a></li>
+				 	<li><a href="###">MVC视频</a></li>
+				 	<li><a href="###">NodeJs</a></li>
+				 	<li><a href="###">聊天室制作</a></li>
+				 	<li><a href="###">在线考试系统</a></li>
+				</ul>				
+			</div>
+			<div><a href="">效果展示</a>
+				<ul class="submenu">
+				 	<li><a href="###">权限管理</a></li>
+				 	<li><a href="###">MVC视频</a></li>
+				 	<li><a href="###">NodeJs</a></li>
+				 	<li><a href="###">聊天室制作</a></li>
+				 	<li><a href="###">在线考试系统</a></li>
+				 </ul>
+			</div>
+			<div><a href="">联系我们</a>
+				<ul class="submenu">
+				 	<li><a href="###">权限管理</a></li>
+				 	<li><a href="###">MVC视频</a></li>
+				 	<li><a href="###">NodeJs</a></li>
+				 	<li><a href="###">聊天室制作</a></li>
+				 	<li><a href="###">在线考试系统</a></li>
+				 </ul>
+			</div>
+		</nav>
+	</body>
+</html>

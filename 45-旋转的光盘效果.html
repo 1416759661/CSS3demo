@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		
+			@keyframes myanimate{
+				from{
+					transform: rotate(0deg);
+				}
+				to{
+					transform: rotate(360deg);
+				}
+			}
+		
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			html{
+				width: 100%;
+				height: 100%;
+			}
+			
+			body{
+				width: 100%;
+				height: 100%;
+				background: radial-gradient(white,green);
+			}
+			
+			.box1:before{
+				content: 'CSS3教程';
+				position: absolute;
+				width: 150px;
+				line-height: 30px;
+				font-size: 26px;
+				color: white;
+				top: 50px;
+				left:calc(50% - 75px);
+				text-align: center;
+				
+			}
+			
+			.box1{
+				width: 400px;
+				height: 400px;
+				background-image:url(img/mf3.jpg);
+				border-radius:200px;
+				box-shadow: 0 0 10px #000;
+				position: relative;
+				left:50px;
+				top:50px;
+				animation: myanimate 6s linear infinite;
+			}
+			
+			.box1:after{
+				content: 'QQ：1416759661 www.yyjcw.com';
+				width: 150px;
+				line-height: 30px;
+				font-size: 16px;
+				color: white;
+				position: absolute;
+				bottom: 50px;
+				left:calc(50% - 75px);
+				text-align: center;
+			}
+			
+			div.closerotate{
+				animation-play-state: paused;
+			}
+			
+			.box2{
+				width:100px;
+				height: 100px;
+				border-radius:50px;
+				background-color: white;
+				position: absolute;
+				left:calc(50% - 50px);
+				top:calc(50% - 50px);
+			}
+			
+			.box3{
+				width:50px;
+				height:50px;
+				border-radius:25px;
+				background-color: white;
+				position: absolute;
+				left:calc(50% - 25px);
+				top:calc(50% - 25px);
+				box-shadow: 0 0 25px #000000 inset;
+			}
+			
+			.btnbox{
+				width: 100px;
+				height:32px;
+				border: solid 1px green;
+				position: absolute;
+				left: 600px;
+				top:120px;
+				border-radius:16px;
+				box-shadow: 0 0 8px #000000;
+				background-color: white;
+				z-index: 0;
+			}
+			
+			.btnbox:before{
+				content: '关';
+				font-size: 12px;
+				color: green;
+				line-height:32px ;
+				position: absolute;
+				left:10px;
+			}
+			
+			.btnbox:after{
+				content: '开';
+				font-size: 12px;
+				color: green;
+				line-height:32px ;
+				position: absolute;
+				right:10px;
+				z-index: -1;
+			}
+			
+			.btnbox span{
+				display:block;
+				width:26px;
+				height:26px;
+				background:radial-gradient(white,green);
+				position: absolute;
+				border-radius:13px;
+				box-shadow: 0 0 5px #000000;
+				left:3px;
+				top:3px;
+				cursor: pointer;
+				transition: all 0.5s;
+			}
+			
+			.btnbox span.on{
+				left:70px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="box1" id="box1">
+			<div class="box2">
+				<div class="box3">
+			
+				</div>
+			</div>
+		</div>
+		
+		<div class="btnbox">
+			<span id="btnplay" class="on"></span>
+		</div>
+		
+		<audio src="music/shen.mp3" loop="loop" autoplay="autoplay" id="myaudio"></audio>
+		
+		<script type="text/javascript">
+			var myaudio=document.getElementById("myaudio");
+			var box1=document.getElementById("box1");
+			document.getElementById("btnplay").onclick=function(){
+				if(this.className=="on")
+				{
+					myaudio.pause();
+					this.className="";
+					box1.className="box1 closerotate";
+				}
+				else
+				{
+					myaudio.play();
+					this.className="on";
+					box1.className="box1";
+				}
+			}
+		</script>
+		
+	</body>
+</html>

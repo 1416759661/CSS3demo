@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box1
+			{
+				font-family: "微软雅黑";
+				font-size: 60px;
+				font-weight: bolder;
+				color: red;
+				/*text-shadow: 0 5px 10px #000;*/
+				/*border: solid 1px red;*/
+				position: relative;
+			}
+			
+			.box1:before{
+				content:attr(data-content);
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 2;
+				height: 65%;
+				color:darkcyan;
+				/*border: solid 1px green;*/
+				padding-right: 30px;
+				overflow: hidden;
+			}
+			
+			.box1:after{
+				content:attr(data-content);;
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index:3;
+				height:40%;
+				color:saddlebrown;
+				/*border: solid 1px blue;*/
+				overflow: hidden;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		
+		
+		<div class="box1" data-content="夜鹰教程网">
+			夜鹰教程网
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 200px;
+				height: 100px;
+				background-color: darkmagenta;
+				color:#fff;
+				transform: rotateX(108deg);
+				font-size: 60px;
+			}
+			
+			.box1{
+				backface-visibility: hidden;
+			}
+			.box2{
+				backface-visibility:visible;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="box1">
+			box1
+		</div>
+		<hr/>
+		<div class="box2">
+			box2
+		</div>
+		
+	</body>
+</html>
